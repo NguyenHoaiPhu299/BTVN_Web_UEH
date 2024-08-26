@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Học web chuẩn</title>
+        <style>            
+            .portfolio ul {
+                padding: 0;
+                margin: 30px;
+                list-style: none;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            .portfolio h2 {
+                padding: 0;
+                text-align: center;
+                position: relative;
+            }
+
+            h2::after {
+                content: "";
+                display: block;
+                width: 50px;
+                height: 2px;
+                background-color: #76a8a2;
+                margin-top: 5px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+
+            .list-tab {
+                text-align: center;
+            }
+
+            .list-tab li {
+                display: inline-block;
+                margin: 0 10px; /* Tùy chỉnh khoảng cách giữa các tab */
+            }
+
+            .list-tab a {
+                text-decoration: none;
+                color: black;
+                font-weight: 500;
+                font-weight:400;
+            }
+
+            .list-tab a:hover {
+                color: #109e8e;
+            }
+
+            .galerry {
+                overflow: hidden; /* Đảm bảo phần tử cha bao bọc các phần tử float */
+            }
+
+            .galerry li {
+                float: left;       /* Sắp xếp các phần tử theo chiều ngang từ trái sang phải */
+                width: 33.3333%;   /* Chia đều chiều rộng cho 3 hình mỗi hàng */
+                box-sizing: border-box; /* Đảm bảo padding và border không ảnh hưởng đến kích thước */
+                padding: 5px;      /* Khoảng cách giữa các hình ảnh */
+            }
+
+            .galerry img {
+                width: 100%;       /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của <li> */
+                height: auto;      /* Giữ tỷ lệ khung hình của hình ảnh */
+            }
+        </style>
+    </head>
+
+    <body>
+        <section class="portfolio">
+            <h2>MY PORTFOLIO</h2>
+            <ul class="list-tab">
+                <li><a href="#">All</a></li>
+                <li><a href="#">Web App</a></li>
+                <li><a href="#">UI/UX</a></li>
+                <li><a href="#">Graphics Design</a></li>
+                <li><a href="#">Mobile App</a></li>
+                <li><a href="#">Branding</a></li>
+                <li><a href="#">Marketing</a></li>
+            </ul>
+            <ul class="galerry">
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>
+                <li><a href="#"><img src="./img_350x260.png" alt=""></a></li>            
+            </ul>
+        </section>
+    </body>
+</html>
